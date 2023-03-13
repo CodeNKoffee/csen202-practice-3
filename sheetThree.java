@@ -2,6 +2,7 @@ import java.util.*;
 
 public class sheetThree {
   public static void main(String[] args) {
+    // EXERCISE 3 - 5
     Scanner input = new Scanner(System.in);
     System.out.println("Enter the test number:");
     int testNumber = input.nextInt();
@@ -42,6 +43,21 @@ public class sheetThree {
 
     System.out.println(valid ? "Weighted score for test "+ testNumber +" is "+ Math.round(weightedScore) +" after calculation." : "Weighted score cannot be calculated.");
 
+    
+    // EXERCISE 3 - 6
+    System.out.println("Enter the first word:");
+    String firstWord = input.nextLine();
+    System.out.println("Enter the second word:");
+    String secondWord = input.nextLine();
+
+    int charactersRemaining = 30 - (firstWord.length() + secondWord.length());
+    String dots = "";
+
+    for (int i = 0; i < charactersRemaining; i++) {
+      dots += "."; 
+    }
+
+    System.out.println(firstWord + dots + secondWord);
     input.close();
   }
 }
