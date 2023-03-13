@@ -62,25 +62,25 @@ public class sheetThree {
 
     // EXERCISE 3 - 7
     int count = 0;
-      int number = 0;
-      int sum = 0;
-      int min = Integer.MAX_VALUE;
-      int max = Integer.MIN_VALUE;
+    int number = 0;
+    int sum = 0;
+    int min = Integer.MAX_VALUE;
+    int max = Integer.MIN_VALUE;
 
-      System.out.println("Enter a sequence of non-negative integers:");
-      while (number >= 0 && count < 10) {
-        number = input.nextInt();
-        if (number >= 0) {
-          count++;
-          sum += number;
-          min = Math.min(min, number);
-          max = Math.max(max, number);
-        }
+    System.out.println("Enter a sequence of non-negative integers:");
+    while (number >= 0 && count < 10) {
+      number = input.nextInt();
+      if (number >= 0) {
+        count++;
+        sum += number;
+        min = Math.min(min, number);
+        max = Math.max(max, number);
       }
+    }
 
-      double average = (count > 0) ? ((double) sum / count) : 0;
-      System.out.println("Minimum: "+ min +"\n" + "Maximum: "+ max +"\n" + "Average: "+ average);
+    double average = (count > 0) ? ((double) sum / count) : 0;
+    System.out.println("Minimum: "+ min +"\n" + "Maximum: "+ max +"\n" + "Average: "+ average);
 
-      input.close();
+    input.close();
   }
 }
